@@ -7,5 +7,4 @@ Day 1 Deliverables:
 - Live NAV fetch script
 - Requirements file
 
-Git Commit:
-Day 1: Data ingestion complete
+
