@@ -13,18 +13,23 @@ for csv_file in DATA_DIR.glob("*.csv"):
     print("Missing Values:")
     print(df.isnull().sum())
 
-fund_master = pd.read_csv(DATA_DIR / "01_fund_master.csv")
-nav_history = pd.read_csv(DATA_DIR / "02_nav_history.csv")
+fund_master = pd.read_csv("data/raw/01_fund_master.csv")
+nav_history = pd.read_csv("data/raw/02_nav_history.csv")
 
-master_codes = set(fund_master["scheme_code"].astype(str))
-nav_codes = set(nav_history["scheme_code"].astype(str))
+print("Fund Master Columns:")
+print(fund_master.columns.tolist())
 
-missing_codes = master_codes - nav_codes
+print("\nNAV History Columns:")
+print(nav_history.columns.tolist())
 
-print("\\nAMFI VALIDATION")
-print("Fund Master Codes:", len(master_codes))
-print("NAV History Codes:", len(nav_codes))
-print("Missing Codes:", len(missing_codes))
+fund_master = pd.read_csv("data/raw/01_fund_master.csv")
+nav_history = pd.read_csv("data/raw/02_nav_history.csv")
+
+print("Fund Master Columns:")
+print(fund_master.columns.tolist())
+
+print("\nNAV History Columns:")
+print(nav_history.columns.tolist())
 
 print("\\nUnique Fund Houses:", fund_master["fund_house"].nunique())
 print("Categories:", fund_master["category"].unique())
