@@ -12,12 +12,6 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Portfolio-black?style=for-the-badge&logo=github&logoColor=white)
 ![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-<br>
-<a href="https://bluestock-analytics-hashmil.streamlit.app/" target="_blank">
-  <img src="https://img.shields.io/badge/Live%20App-View%20Streamlit%20Dashboard-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Live Streamlit Dashboard" />
-</a>
-<br>
-
 ---
 </div>
 
